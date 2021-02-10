@@ -1,0 +1,24 @@
+{
+  "name": "memorama",
+  "version": "1.0.0",
+  "description": "Creando un juego de memorama con llamada a un API, que muestre las cartas de pokemon",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdgarGc026/memoramajs.git"
+  },
+  "keywords": [
+    "memorama",
+    "js",
+    "api"
+  ],
+  "author": "EdgarGgc026",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdgarGc026/memoramajs/issues"
+  },
+  "homepage": "https://github.com/EdgarGc026/memoramajs#readme"
+}

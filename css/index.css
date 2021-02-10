@@ -1,0 +1,111 @@
+/*
+Generar estilos:
+    1. Posicionamiento (widht, height, padding, margin, etc)
+    2. Modelo de caja (box model)
+    3. Tipografia (tam fuente, fuente, etc)
+    4. Visuales (shadow box, border radius, etc)
+    5. Miselaneos u otros
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main {
+  width: 100%;
+  background-color: #fdfffc;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #bb1f35;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content > img {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f3346;
+  font-size: 1.6rem;
+}
+
+.hero {
+  width: 68rem;
+  height: 19rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero img {
+  display: inline-block;
+  width: 25rem;
+  height: 19rem;
+}
+
+.btn-start {
+  width: 18rem;
+  height: 9rem;
+
+  cursor: pointer;
+
+  background: #ecf0f1;
+  color: #2c3e50;
+
+  border: none;
+  border-bottom: 0.4rem solid #c4c6c7;
+  border-radius: 0.8rem;
+
+  font-size: 3em;
+  transition: 0.5s;
+  outline: none;
+}
+
+.btn-start:hover {
+  color: #ecf0f1;
+  background: #2c3e50;
+  border-bottom: 0.4rem solid #1f3346;
+}
+
+.btn-start:active {
+  transform: scale(0.95);
+}
+
+.start {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: 0.5s;
+  outline: none;
+}
+
+.start:hover {
+  color: #ecf0f1;
+}

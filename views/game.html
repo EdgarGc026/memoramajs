@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Memorama</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Pokerama</h1>
+      <div class="header__container">
+        <span class="text-description"
+          >Indica cuantos pares tendra el juego</span
+        >
+        <input type="text" placeholder="¿Cuantos pares?" />
+
+        <input type="submit" value="Agregar cartas" />
+      </div>
+    </header>
+
+    <h2>Mostrando las cartas</h2>
+    <main class="main">
+      <div id="loading" class="loading">
+        <div class="pokeball">
+          <div class="pokeball__details"></div>
+        </div>
+        <p class="loading__text">Cargando</p>
+      </div>
+
+      <section class="container">
+        <!-- <article class="card">
+          <div class="card_content">
+            <img class="card__img" src="" alt="" />
+            <span class="card__name">Pikachu</span>
+          </div>
+        </article> -->
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
