@@ -2,7 +2,7 @@ class Game {
   constructor() {}
 
   //Creamos un metodo donde se generen los numeros aleatoreamente
-  getRandomNumberPokemon(min, max) {
+  getRandomNumbers(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
 
@@ -20,24 +20,22 @@ class Game {
   //Estos numeros seran guardados en un arreglo ordenado donde se verificaran
   //que no esten repetidos. En caso de estar repetidos, sera sustituido por otro
   //numero.
-  getRandomPokemon() {
-    let array = [];
+  addNumbersToArray() {
+    const array = [];
+    const size = 10;
 
-    for (let i = 0; i < 10; i++) {
-      array.push(this.getRandomNumberPokemon(1, 20));
+    while (array.length < size) {
+      let numbers = this.getRandomNumbers(1, 20);
+      if (!array.includes(numbers)) {
+        array.push(numbers);
+        this.orderNumberElements(array);
+      }
     }
-    this.orderNumberElements(array);
     console.log(array);
   }
 }
+// this.orderNumberElements(array);
 
 let game = new Game();
-let show = game.getRandomNumberPokemon(1, 20);
-let showinArr = game.getRandomPokemon();
-console.log(showinArr);
-
-/* 
-
-let showinArr = game.getRandomPokemon();
-
-console.log(show); */
+let rand = game.getRandomNumbers(1, 20);
+let addNumber = game.addNumbersToArray();
