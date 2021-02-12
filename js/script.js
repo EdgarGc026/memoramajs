@@ -1,5 +1,16 @@
+let numberPairs = document.querySelector("#number_pairs");
+
 class Game {
   constructor() {}
+
+  numbersFromInput(event) {
+    numberPairs.value;
+    console.log(numberPairs);
+  }
+
+  addClickEvent() {
+    this.numberPairs.addEventListener("click", this.numbersFromInput);
+  }
 
   //Creamos un metodo donde se generen los numeros aleatoreamente
   getRandomNumbers(min, max) {
@@ -22,8 +33,7 @@ class Game {
   //numero.
   addNumbersToArray() {
     const array = [];
-    const size = 10;
-
+    let size = 10;
     while (array.length < size) {
       let numbers = this.getRandomNumbers(1, 20);
       if (!array.includes(numbers)) {
